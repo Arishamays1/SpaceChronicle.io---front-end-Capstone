@@ -3,6 +3,7 @@ import {Routes, Route} from 'react-router-dom'
 import Login from '../Login/login';
 import SpaceList from './SpaceList';
 import Register from '../Register/Register';
+import Success from '../Register/Success';
 
 function Main(props){
     const [space, setSpace] = useState(null);
@@ -32,6 +33,7 @@ function Main(props){
                 < Route path ='/' element={<SpaceList space ={space}/>}/>
                 < Route exact path='/login' element={< Login />}/>
                 < Route exact path='/register' element={<Register/>}/>
+                < Route path='/success' element={<Success/>}/>
             </Routes>
         </main>
 

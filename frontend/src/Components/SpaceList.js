@@ -19,12 +19,12 @@ export default function SpaceList() {
     return space.map((space, idx) => (
       <div key={idx}>
         <h1>{space.title}</h1>
-        <img src={space.hdurl} alt={space.name} />
+        <img width='250' height='250' src={space.hdurl} alt={space.name} />
         <h3>{space.explanation}</h3>
       </div>
     ));
   };
 
-  return space ? loaded() : <h1>Loading....</h1>;
+  return space ? loaded() : <h1>Loading cofidential components...</h1>;
 }
 
