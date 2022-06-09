@@ -1,5 +1,6 @@
 // import "./styles.css";
 import { useEffect, useState } from "react";
+import {Link} from 'react-router-dom'
 
 export default function SpaceList() {
   const [space, setspace] = useState(null);
@@ -19,7 +20,9 @@ export default function SpaceList() {
     return space.map((space, idx) => (
       <div key={idx}>
         <h1>{space.title}</h1>
+        <Link to={`/${idx}`}>
         <img width='250' height='250' src={space.hdurl} alt={space.name} />
+        </Link>
         <h3>{space.explanation}</h3>
       </div>
     ));
