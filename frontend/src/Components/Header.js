@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 import { useCookies } from 'react-cookie'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
-
+import '../Styles/Header.css'
 
 const Header = (props) =>{
     const navigate = useNavigate()
@@ -37,7 +37,7 @@ const Header = (props) =>{
     return(
         <>
         <nav className="navbar">
-            <Link to='/'>
+            <Link to='/spacey'>
                 <img src={require('../Pictures/Visuals/Spacchronlogo.png')}></img>
                 </Link>    
                 

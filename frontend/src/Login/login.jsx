@@ -3,7 +3,7 @@ import {useState} from 'react'
 import { useNavigate } from 'react-router-dom'
 import { toast, ToastContainer } from 'react-toastify'
 import axios from 'axios'
-
+import Header from '../Components/Header'
 
 const Login = ()=>{
     const navigate = useNavigate()
@@ -56,22 +56,25 @@ const Login = ()=>{
 
     return(
         <div className="loginpage">
-            <h2>Login Form</h2>
+            <header><Header/></header>
+           <div>
+           <img src={require('../Pictures/Visuals/login button.png')}/>
+           </div>
 
             <form onSubmit={handleSubmit}>
                 <div class="imgcontainer">
-                    <img src="https://thumbs.dreamstime.com/b/funny-astronaut-looks-smartphone-sits-moon-space-vector-illustration-prints-design-135260450.jpg" alt="Avatar" class="avatar"/>
+                    <img width='250' height='250' src="https://thumbs.dreamstime.com/b/funny-astronaut-looks-smartphone-sits-moon-space-vector-illustration-prints-design-135260450.jpg" alt="Avatar" class="avatar"/>
                 </div>
                 <div className="flex-container">
                     <div className="container">
-                        <label for="email"><b>Email</b></label>
+                        <label for="email"><b>Email</b></label><br/>
                         <input type="text" placeholder="Enter Email" name="email" required onChange={handleChange}/>
-
-                        <label for="password"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="password" required onChange={handleChange}/>
+                            <br/>
+                        <label for="password"><b>Password</b></label><br/>
+                        <input type="password" placeholder="Enter Password" name="password" required onChange={handleChange}/><br/>
                             
-                        <button type="submit">Login</button>
-                        <button type="button" class="cancelbtn">Cancel</button>
+                        <button type="submit"> <img src={require('../Pictures/Visuals/login button.png')}/></button><br/>
+                        
                     </div>
 
                 </div>

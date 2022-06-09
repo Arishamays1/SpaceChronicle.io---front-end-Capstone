@@ -1,11 +1,12 @@
 import {useParams} from 'react-router-dom'
 import {useState} from 'react'
-
+import Header from '../Components/Header'
 
 const SpacePage = (props)=>{
     let {id} = useParams()
     let space = props.space[id]
     let discussion = props.discussion
+    console.log(discussion)
     const [newForm, setNewForm] = useState({
         content:''
     })
@@ -21,35 +22,63 @@ const SpacePage = (props)=>{
             content:''
         })
     }
-   
-    return 1 > 0? (
-        <div className="showpage">
-            <h2>{space.title}</h2>
-            <div className="middle-container">
-                <div className="description-grid">
-                    <h1>{space.date}</h1>
-                    <img className="film-image" src={space.image} alt={space.title}/>
-                    <div className="film-description">
-                        <h3>Description</h3>
-                        <p>{space.explanation}</p>
-                    </div>
-                   
-                </div> 
-                <h3>Start a discussion!</h3>
-                    <div>
-                        {discussion.map((discussion,idx)=>(
-                            <p key={idx}>{discussion.content}</p>
-                        ))}
-                    </div>
-                    <section className="review-section">
-                        <form onSubmit={handleSubmit} autocomplete="off">
-                            <input type='text' value={newForm.content} name='content' placeholder='Your thoughts?' onChange={handleChange}/>
-                            <input id="reviewsubmit" type='submit' value='Submit'/>
-                        </form>
-                    </section>
+    const load=()=>{
+        return discussion.map((discuss, idx)=>(
+            <div key={idx}>
+                {discuss.content}
             </div>
 
-        </div>
-    ): <h1>Can't Load...</h1>
+        ))
+           
+        
+    }
+   return (
+       <div>
+           <div>
+               <Header/>
+           </div>
+           <h1>{space.title}</h1> 
+           
+           <img width='250' height='250' src={space.hdurl} alt={space.title}/>
+           <h1>Taken on: {space.date}</h1>
+           <p>{space.explanation}</p>
+           {load()}
+           <section>
+                    <form onSubmit={handleSubmit} autocomplete="off">
+                        <input type='text' value={newForm.content} name='content' placeholder='Your thoughts?' onChange={handleChange}/>
+                        <input type='submit' value='Submit'/>
+                    </form>
+            </section>
+       </div>
+)
+// {/* <h1>not working...</h1> */}
+    // return props(
+    //     <div className="showpage">
+    //         <h2>{space.title}</h2>
+    //         <div className="middle-container">
+    //             <div className="description-grid">
+    //                
+    //                 <div >
+    //                     <h3>Description</h3>
+    //                     
+    //                 </div>
+                   
+    //             </div> 
+    //             <h3>Start a discussion!</h3>
+    //                 <div>
+    //                     {discussion.map((discussion,idx)=>(
+    //                         <p key={idx}>{discussion.content}</p>
+    //                     ))}
+    //                 </div>
+                    // <section className="review-section">
+                    //     <form onSubmit={handleSubmit} autocomplete="off">
+                    //         <input type='text' value={newForm.content} name='content' placeholder='Your thoughts?' onChange={handleChange}/>
+                    //         <input id="reviewsubmit" type='submit' value='Submit'/>
+                    //     </form>
+                    // </section>
+    //         </div>
+
+    //     </div>
+    // ): <h1>Can't Load...</h1>
 }
 export default SpacePage

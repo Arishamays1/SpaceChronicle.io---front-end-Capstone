@@ -6,17 +6,17 @@ import Register from '../Register/Register';
 import Success from '../Register/Success';
 import SpacePage from '../Pages/SpacePage';
 import UserPage from '../Pages/User';
+import Home from './Home';
+
 
 function Main(props){
     const [space, setSpace] = useState(null);
     const [user, setUser]= useState(null)
-    const [discussion,setDiscussion] = useState({
-        discussion:[{discussion:'Wow I really loved this film a lot!'}]
-    })
+    const [discussion,setDiscussion] = useState(null)
 
 
 
-    const URL = "https://api.nasa.gov/planetary/apod?api_key=uv3clIRauk82izX7ubUIKtRboF7tiup9AXZSt3Ah&count=50";
+    const URL = "https://api.nasa.gov/planetary/apod?api_key=uv3clIRauk82izX7ubUIKtRboF7tiup9AXZSt3Ah&count=10";
 
     useEffect(() => {
         const getData = async () => {
@@ -58,12 +58,13 @@ function Main(props){
         getUser();
     }, []);
 
-
+    useEffect(()=> discussionData(),[])
 
     return(
         <main>
             <Routes>
-                < Route path ='/' element={< SpaceList space ={space}/>}/>
+                < Route path= '/' element={<Home/>}/>
+                < Route path ='/spacey' element={< SpaceList space ={space}/>}/>
                 < Route path= '/:id' element={< SpacePage space={space} discussion={discussion} createDiscussion={createDiscussion}/>}/>
                 < Route exact path='/login' element={< Login />}/>
                 < Route path ='/userpage/:id' element={<UserPage user={user}/>}/>

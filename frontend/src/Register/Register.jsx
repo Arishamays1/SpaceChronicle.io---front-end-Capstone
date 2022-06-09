@@ -2,6 +2,7 @@ import {useState} from 'react'
 import {useNavigate} from 'react-router-dom'
 import axios from 'axios'
 import { toast, ToastContainer } from 'react-toastify'
+import Header from '../Components/Header'
 
 const Register = (props) =>{
     const navigate = useNavigate()
@@ -61,6 +62,9 @@ const Register = (props) =>{
     return(
         <>
             <div className="signup">
+                <div>
+                
+                </div>
                 <form onSubmit={handleSubmit} autoComplete="off">
                     <div className="grid-container">
                         <div className="sign-container">
