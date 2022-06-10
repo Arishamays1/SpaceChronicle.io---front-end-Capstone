@@ -1,0 +1,27 @@
+body{
+    
+}
+.spaceship{
+    padding-top: 20px;
+    padding-bottom: 15px
+}
+
+.logo{
+width:350px;
+
+}
+
+.triangles{
+padding: 50px 30px;
+}
+
+.auth{
+    display:flex;
+    justify-content: center;
+
+}
+
+.contents{
+    display:flex;
+    justify-content: center;
+}

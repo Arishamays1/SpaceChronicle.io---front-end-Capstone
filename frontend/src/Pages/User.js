@@ -32,10 +32,6 @@ const UserPage = (props) =>{
                 <h5>{user.favorites}</h5>
             </div>
 
-            <div >
-                <h3>Discussion:{user.discussion}</h3>
-            </div>
-
         </div>
         </>
    

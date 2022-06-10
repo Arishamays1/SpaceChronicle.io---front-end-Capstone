@@ -59,17 +59,18 @@ function Main(props){
     }, []);
 
     useEffect(()=> discussionData(),[])
+   
 
     return(
         <main>
             <Routes>
                 < Route path= '/' element={<Home/>}/>
                 < Route path ='/spacey' element={< SpaceList space ={space}/>}/>
-                < Route path= '/:id' element={< SpacePage space={space} discussion={discussion} createDiscussion={createDiscussion}/>}/>
+                < Route exact path= '/:id' element={< SpacePage space={space} discussion={discussion} createDiscussion={createDiscussion}/>}/>
                 < Route exact path='/login' element={< Login />}/>
-                < Route path ='/userpage/:id' element={<UserPage user={user}/>}/>
+                < Route exact path ='/userpage/:id' element={<UserPage user={user}/>}/>
                 < Route exact path='/register' element={<Register/>}/>
-                < Route path='/success' element={<Success/>}/>
+                < Route exact path='/success' element={<Success/>}/>
             </Routes>
         </main>
 

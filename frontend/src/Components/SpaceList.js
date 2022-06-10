@@ -2,7 +2,11 @@
 import { useEffect, useState } from "react";
 import {Link} from 'react-router-dom'
 import Header from "./Header";
+import '../Styles/List.css'
+
+
 export default function SpaceList() {
+
   const [space, setspace] = useState(null);
 
   const URL = "https://api.nasa.gov/planetary/apod?api_key=uv3clIRauk82izX7ubUIKtRboF7tiup9AXZSt3Ah&count=50";
@@ -15,10 +19,7 @@ export default function SpaceList() {
     };
     getData();
   }, []);
-  const head=()=>{
-    return <Header/>
-  }
-  head();
+
   const loaded = () => {
     return space.map((space, idx) => (
       <div key={idx}>
@@ -30,7 +31,15 @@ export default function SpaceList() {
       </div>
     ));
   };
-
-  return space ? loaded() : <h1>Loading cofidential components...</h1>;
+  
+  
+  return space ?(
+  <>
+  <Header/>
+   {loaded()}
+  </>):<div>
+    <img width='250' height='250' src='https://icon-library.com/images/loading-icon-transparent-background/loading-icon-transparent-background-18.jpg' alt='loading' /> <br/>
+  <h1>Loading Top Secret Files...</h1>
+  </div>
 }
 

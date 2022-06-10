@@ -70,7 +70,7 @@ const Register = (props) =>{
                         <div className="sign-container">
                             <div className="sign">
                                 <h1>Sign Up</h1>
-                                <p>Please fill in this form to create an account</p>
+                                <p>Create an Account!</p>
                             </div>
                             <hr/>
                             <label for="firstName"><b>First Name</b></label>
