@@ -7,6 +7,7 @@ import Success from '../Register/Success';
 import SpacePage from '../Pages/SpacePage';
 import UserPage from '../Pages/User';
 import Home from './Home';
+import Dedicate from '../Pages/Dedicate';
 
 
 function Main(props){
@@ -71,6 +72,7 @@ function Main(props){
                 < Route exact path ='/userpage/:id' element={<UserPage user={user}/>}/>
                 < Route exact path='/register' element={<Register/>}/>
                 < Route exact path='/success' element={<Success/>}/>
+                < Route path='/dad' element={<Dedicate/>}/>
             </Routes>
         </main>
 

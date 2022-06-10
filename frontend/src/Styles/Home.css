@@ -3,25 +3,126 @@ body{
 }
 .spaceship{
     padding-top: 20px;
-    padding-bottom: 15px
+    padding-bottom: 15px;
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+
 }
+    
 
 .logo{
 width:350px;
 
+
+}
+.logo:hover{
+    box-shadow: 0 4px 8px 0 #C5EBC3, 0 6px 20px 0 #C5EBC3
 }
 
 .triangles{
-padding: 50px 30px;
+
 }
 
 .auth{
     display:flex;
     justify-content: center;
-
+    
 }
 
 .contents{
     display:flex;
     justify-content: center;
 }
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+#login:hover{
+    box-shadow: 0 4px 8px 0 #C5EBC3, 0 6px 20px 0 #C5EBC3
+}
+#signup:hover{
+    box-shadow: 0 4px 8px 0 #C5EBC3, 0 6px 20px 0 #C5EBC3
+}
+
+.triangle1{
+    -webkit-animation: mover1 2.6s infinite  alternate;
+    animation: mover1 2.6s infinite  alternate;
+    width:79px;
+    padding-right: 15px;
+    padding-left: 10px;
+    margin-bottom:-52px;
+}
+.triangle1:hover,.triangle2:hover,.triangle3:hover,.triangle4:hover,.triangle5:hover,.triangle6:hover,.triangle7:hover,.triangle8:hover,.triangle9:hover{
+    animation-name: turnOne;
+}
+
+.triangle2{
+    -webkit-animation: mover1 2.5s infinite  alternate;
+    animation: mover1 2.5s infinite  alternate;
+    width:79px;
+    padding-right: 5px;
+    padding-left: 10px;
+    margin-bottom:32px;
+}
+.triangle3{
+    -webkit-animation: mover1 2.2s infinite  alternate;
+    animation: mover1 2.2s infinite  alternate;
+    width:85px;
+    padding-right: 5px;
+    padding-left: 10px;
+    margin-bottom:-22px;
+}
+.triangle4{
+    -webkit-animation: mover1 2.5s infinite  alternate;
+    animation: mover1 2.5s infinite  alternate;
+    width:85px;
+    padding-right: 18px;
+    margin-bottom:29px;
+}
+.triangle5{
+    -webkit-animation: mover1 2.6s infinite  alternate;
+    animation: mover1 2.6s infinite  alternate;
+    width:85px;
+    margin-bottom:-9px;
+}
+.triangle6{
+    -webkit-animation: mover1 2.8s infinite  alternate;
+    animation: mover1 2.8s infinite  alternate;
+    width:40px;
+   
+}
+.triangle7{
+    -webkit-animation: mover1 2.3s infinite  alternate;
+    animation: mover1 2.3s infinite  alternate;
+    margin-bottom:69px;
+    width: 35px
+}
+.triangle8{
+    -webkit-animation: mover1 2.3s infinite  alternate;
+    animation: mover1 2.3s infinite  alternate;
+    margin-bottom:-89px;
+   
+}
+.triangle9{
+    -webkit-animation: mover1 2.5s infinite  alternate;
+    animation: mover1 2.5s infinite  alternate;
+    margin-bottom: 70px;
+}
+@-webkit-keyframes mover1 {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+@keyframes mover1 {
+    0% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+@keyframes turnOne {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(180deg);}
+  }
