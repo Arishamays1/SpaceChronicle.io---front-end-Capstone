@@ -28,7 +28,7 @@ const UserPage = (props) =>{
                 <hr/>
             </div>
             
-
+ 
             <div className="favorites">
                 <h3>Read all your favorites here: </h3>
                 <h4 className='userfave'>{user.favorites}</h4>
