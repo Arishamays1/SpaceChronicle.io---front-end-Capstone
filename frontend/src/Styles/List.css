@@ -1,0 +1,47 @@
+.cont-list{
+     display: flex;
+     align-items: center;
+    width: 40%;
+    padding: 30px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'VT323', monospace;
+  
+}
+  
+  .card1{
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px #C5EBC3, 
+      -5px -5px 30px 15px #C5EBC3;
+      border-radius: 5%
+     
+   
+  }
+
+  .card1:hover{
+    box-shadow: 5px 5px 30px 15px #e8ed51, 
+    -5px -5px 30px 15px #e8ed51;
+  }
+  .card_title{
+      text-align: center;
+      color: white
+  }
+  .card_image{
+    display:flex;
+    padding-right: 20px;
+  }
+  .explanation{
+      padding:10px;
+      position:relative;
+      color: white
+  }
+  img{
+      
+  }
+  .direct{
+      color: white
+  }

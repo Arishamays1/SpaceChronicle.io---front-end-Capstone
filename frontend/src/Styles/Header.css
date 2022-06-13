@@ -1,0 +1,33 @@
+.navbar{
+    display:flex;
+    background-image:url('https://wallpaperaccess.com/full/1201867.jpg') ;
+ 
+    padding-left: 10px;
+    background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.bar{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+   margin-left: 90px;
+}
+
+.spaceship1{
+    width:80px;
+    height:80px;
+    margin-top:-30px;
+    position: fixed; top:10px; right:0;
+}
+
+#login, #register, #logout{
+    display: flex;
+   border: yellow solid 5px;
+   color:aliceblue;
+   font-size: 20px;
+  
+}
+

@@ -25,7 +25,7 @@ const Success = () =>{
     },[cookie,navigate,removeCookie])
     const logOut = () =>{
         removeCookie('jwt')
-        navigate('/userpage/:id')
+        navigate(`/`)
     }
     return(
         <>

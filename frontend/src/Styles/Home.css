@@ -1,5 +1,5 @@
 body{
-    
+   display: inline-block; 
 }
 .spaceship{
     padding-top: 20px;
@@ -30,8 +30,11 @@ width:350px;
 }
 
 .contents{
-    display:flex;
-    justify-content: center;
+    display:inline-flex;
+    top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 @-webkit-keyframes mover {
     0% { transform: translateY(0); }
@@ -126,3 +129,10 @@ width:350px;
     0% {transform: rotate(0deg);}
     100% {transform: rotate(180deg);}
   }
+
+.spacecontent{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}

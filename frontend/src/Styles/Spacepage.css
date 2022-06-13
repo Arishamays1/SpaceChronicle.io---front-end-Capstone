@@ -1,0 +1,24 @@
+.comments{
+    display:inline-block;
+    background-color: rgb(117, 210, 210);
+    width: 400px;
+    border: 5px solid #C5EBC3;
+    box-shadow: 0 4px 8px 0 #C5EBC3, 0 6px 20px 0 #C5EBC3;
+    padding-bottom: 15px;
+}
+.forms{
+    padding: 15px;
+}
+
+.eachcom{
+    
+}
+.texts{
+
+}
+
+.submit{
+  background-color: #c3e6eb;
+  box-shadow: 0 4px 8px 0 #C5EBC3, 0 6px 20px 0 #C5EBC3;
+
+}

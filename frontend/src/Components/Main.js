@@ -28,13 +28,18 @@ function Main(props){
         };
         getData();
     }, []);
+    
+    const editUser= async(user, id)=>{
+
+    }
+
     const discussionData = () =>{
         fetch('https://space-io-backend.herokuapp.com/discussion')
         .then(response => response.json())
         .then(result => setDiscussion(result))
     }
  
-     const createDiscussion = async(review) =>{
+     const createDiscussion = async(discussion) =>{
          await fetch ('https://space-io-backend.herokuapp.com/discussion',{
              method:'post',
              headers:{
@@ -42,6 +47,7 @@ function Main(props){
              },
              body: JSON.stringify(discussion)
          })
+         discussionData()
      }
  
      const deleteDiscussion = async id =>{

@@ -38,7 +38,7 @@ const Login = ()=>{
                     if(email) generateError(email)
                     else if(password) generateError(password)
                 }else{
-                    navigate('/userpage/:id')
+                    navigate(`/userpage/${data.user}`)
                 }
             }
 
@@ -55,10 +55,14 @@ const Login = ()=>{
 
 
     return(
+        <div>
+        <div>
+               <Header/>
+           </div>
         <div className="loginpage">
-            <header><Header/></header>
+            <div>
            <div>
-           <img src={require('../Pictures/Visuals/login button.png')}/>
+           <img src={require('../Pictures/Visuals/login button.png')}alt='login button'/>
            </div>
 
             <form onSubmit={handleSubmit}>
@@ -70,7 +74,7 @@ const Login = ()=>{
                         <label for="email"><b>Email</b></label><br/>
                         <input type="text" placeholder="Enter Email" name="email" required onChange={handleChange}/>
                             <br/>
-                        <label for="password"><b>Password</b></label><br/>
+                        <label for="password"><b>Password</b></label><br/> 
                         <input type="password" placeholder="Enter Password" name="password" required onChange={handleChange}/><br/>
                             
                         <button type="submit"> <img src={require('../Pictures/Visuals/login button.png')}/></button><br/>
@@ -80,6 +84,8 @@ const Login = ()=>{
                 </div>
             </form>
             <ToastContainer/>
+            </div>
+        </div>
         </div>
 )
 }

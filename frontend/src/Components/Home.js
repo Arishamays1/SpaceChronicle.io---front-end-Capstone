@@ -5,7 +5,7 @@ import { useCookies } from 'react-cookie'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import '../Styles/Home.css'
-import Header from './Header'
+
 
 const Home= ()=>{
     return(
@@ -14,6 +14,7 @@ const Home= ()=>{
             <div >
             <img className='logo' src={require('../Pictures/Visuals/Spacchronlogo.png')}></img>
             </div>
+            <div className='spacecontent'>
             <div className='contents'>
             <div className="triangles">
                 <div>
@@ -43,6 +44,7 @@ const Home= ()=>{
                 </div>
             </div>
             </div>
+        </div>
         </div>
      
     )

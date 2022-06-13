@@ -1,7 +1,7 @@
 import {useParams} from 'react-router-dom'
 import {useState} from 'react'
 import Header from '../Components/Header'
-
+import '../Styles/Spacepage.css'
 const SpacePage = (props)=>{
     let {id} = useParams()
     let space = props.space[id]
@@ -24,7 +24,7 @@ const SpacePage = (props)=>{
     }
     const load=()=>{
         return discussion.map((discuss, idx)=>(
-            <div key={idx}>
+            <div className="eachcom" key={idx}>
                 {discuss.content}
             </div>
 
@@ -42,11 +42,11 @@ const SpacePage = (props)=>{
            <img width='250' height='250' src={space.hdurl} alt={space.title}/>
            <h1>Taken on: {space.date}</h1>
            <p>{space.explanation}</p>
-           {load()}
-           <section>
+           <div className="comments">{load()}</div>
+           <section className='forms' >
                     <form onSubmit={handleSubmit} autocomplete="off">
-                        <input type='text' value={newForm.content} name='content' placeholder='Your thoughts?' onChange={handleChange}/>
-                        <input type='submit' value='Submit'/>
+                        <input className='texts' type='text' value={newForm.content} name='content' placeholder='Your thoughts?' onChange={handleChange}/>
+                        <input className='submit' type='submit' value='Submit'/>
                     </form>
             </section>
        </div>

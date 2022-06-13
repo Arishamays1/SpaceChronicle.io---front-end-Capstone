@@ -37,20 +37,25 @@ const Header = (props) =>{
     return(
         <>
         <nav className="navbar">
-            <Link to='/spacey'>
-                <img src={require('../Pictures/Visuals/Spacchronlogo.png')}></img>
-                </Link>    
-                
-            <Link to ='/login'>
-               Login
+            <div>
+                <Link to='/spacey'>
+                     <img className='logos' src={require('../Pictures/Visuals/Spacchronlogo.png')}></img>
+                </Link>
+            </div>
+            <div className="bar">
+              <Link to ='/login'>
+               <span id='login'>Login</span>
             </Link> 
             <Link to ='/register'>
-                Register
+                <span id='register'>Register</span>
             </Link>
              <Link onClick={logOut} to='/'>
                 <span id="logout">Logout</span>
-            </Link>
-          <a href="" target='_blank'><img className="dustbabies" src="https://c.tenor.com/fI61QoSsI1sAAAAj/ufo-search.gif"alt="spaceship"/></a>
+            </Link> 
+            </div>
+          <a href="https://www.linkedin.com/in/arisha-mays-7776071b5/" target='_blank'><img className="spaceship1" src="https://c.tenor.com/fI61QoSsI1sAAAAj/ufo-search.gif"alt="spaceship"/></a>  
+           
+            
            
         </nav>
         

@@ -61,6 +61,7 @@ const Register = (props) =>{
 
     return(
         <>
+        <Header/>
             <div className="signup">
                 <div>
                 
