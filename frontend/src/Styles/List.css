@@ -45,3 +45,11 @@
   .direct{
       color: white
   }
+
+  .loadingscreen{
+    display:flex;
+    flex-direction: column;
+    font-family: 'VT323', monospace;
+    color: yellow;
+    text-align:center
+  }

@@ -1,6 +1,7 @@
 import {useParams} from 'react-router-dom'
 import {useState} from 'react'
 import Header from '../Components/Header'
+import "../Styles/User.css"
 const UserPage = (props) =>{
     let {id} = useParams()
     let users = props.user
@@ -30,7 +31,7 @@ const UserPage = (props) =>{
 
             <div className="favorites">
                 <h3>Read all your favorites here: </h3>
-                <h5>{user.favorites}</h5>
+                <h4 className='userfave'>{user.favorites}</h4>
             </div>
 
         </div>

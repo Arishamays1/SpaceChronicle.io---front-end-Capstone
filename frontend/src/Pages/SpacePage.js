@@ -25,7 +25,7 @@ const SpacePage = (props)=>{
     const load=()=>{
         return discussion.map((discuss, idx)=>(
             <div className="eachcom" key={idx}>
-                {discuss.content}
+                A User Commented: {discuss.content}
             </div>
 
         ))
@@ -37,16 +37,19 @@ const SpacePage = (props)=>{
            <div>
                <Header/>
            </div>
-           <h1>{space.title}</h1> 
+           <div classname='contained'>
+            <h1 className='spacetitle'>{space.title}</h1> 
            
-           <img width='250' height='250' src={space.hdurl} alt={space.title}/>
-           <h1>Taken on: {space.date}</h1>
-           <p>{space.explanation}</p>
-           <div className="comments">{load()}</div>
+           <img className='spacepic' src={space.hdurl} alt={space.title}/>
+           <h1 className='spacedate'>Taken on: {space.date}</h1>
+           </div>
+          
+           <p className='spaceexplanation'>{space.explanation}</p>
+           <div className="comments">Official Discussion Board:{load()}</div>
            <section className='forms' >
                     <form onSubmit={handleSubmit} autocomplete="off">
                         <input className='texts' type='text' value={newForm.content} name='content' placeholder='Your thoughts?' onChange={handleChange}/>
-                        <input className='submit' type='submit' value='Submit'/>
+                        <input className='submitcmt' type='submit' value='Submit'/>
                     </form>
             </section>
        </div>

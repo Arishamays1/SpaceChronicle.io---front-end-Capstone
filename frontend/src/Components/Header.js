@@ -44,7 +44,7 @@ const Header = (props) =>{
             </div>
             <div className="bar">
               <Link to ='/login'>
-               <span id='login'>Login</span>
+               <span id='logins'>Login</span>
             </Link> 
             <Link to ='/register'>
                 <span id='register'>Register</span>

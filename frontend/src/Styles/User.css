@@ -1,0 +1,19 @@
+.profile{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'VT323', monospace;
+    color:aliceblue
+}
+.user-title{
+    font-size:35px
+}
+
+.bio{
+    font-size: 25px
+}
+.favorites{
+    font-size: 30px
+}
+.userfave{
+    text-align:center}

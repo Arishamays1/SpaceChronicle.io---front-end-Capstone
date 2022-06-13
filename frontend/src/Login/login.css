@@ -1,7 +1,21 @@
 
 .loginpage{
-position: absolute;
-margin: auto;
-  font-family: 'VT323', monospace;
+display:flex;
+flex-direction:column;
+align-items: center;
 
+
+}
+.containerlog{
+    display:flex;
+flex-direction:column;
+align-items: center;
+font-family: 'VT323', monospace;
+color:aliceblue;
+font-size: 28px
+}
+
+.submitbtn{
+    background-color: #51567b;
+    border:#51567b 0px solid
 }

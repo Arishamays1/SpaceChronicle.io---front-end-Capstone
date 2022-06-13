@@ -46,7 +46,7 @@ export default function SpaceList() {
   <>
   <Header/>
    {loaded()}
-  </>):<div>
+  </>):<div className='loadingscreen'>
     <img width='250' height='250' src='https://icon-library.com/images/loading-icon-transparent-background/loading-icon-transparent-background-18.jpg' alt='loading' /> <br/>
   <h1>Loading Top Secret Files...</h1>
   </div>

@@ -1,24 +1,63 @@
 .comments{
-    display:inline-block;
-    background-color: rgb(117, 210, 210);
+    display:flex;
+    flex-direction:column;
+    background-color:#C5EBC3;
     width: 400px;
     border: 5px solid #C5EBC3;
     box-shadow: 0 4px 8px 0 #C5EBC3, 0 6px 20px 0 #C5EBC3;
     padding-bottom: 15px;
+    align-items:center;
+    text-align: center;
+    
 }
+
 .forms{
     padding: 15px;
 }
 
 .eachcom{
-    
+padding: 10px;
+font-family: 'VT323', monospace;
+font-size:25px;
 }
-.texts{
 
-}
 
-.submit{
+.submitcmt{
   background-color: #c3e6eb;
   box-shadow: 0 4px 8px 0 #C5EBC3, 0 6px 20px 0 #C5EBC3;
+  font-family: 'VT323', monospace;
+  font-size:20px
 
+}
+
+.spacepic{
+    width:300px;
+    height:300px;
+    box-shadow: 8px 4px 8px 9px #C5EBC3, 0 6px 20px 0 #C5EBC3;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.spacetitle, .spacedate, .spaceexplanation{
+    text-align:center;
+    font-family: 'VT323', monospace;
+    font-size:25px;
+    color:yellow
+}
+.spaceexplanation{
+background-color: #51567b;
+border: solid;
+}
+
+.forms{
+    display:flex;
+    font-family: 'VT323', monospace;
+    flex-direction: column;
+    align-items:center
+}
+.texts{
+    font-family: 'VT323', monospace;
+    font-size:25px
 }

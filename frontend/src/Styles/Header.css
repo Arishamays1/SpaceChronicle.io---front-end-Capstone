@@ -6,14 +6,17 @@
     background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 100vw;
 }
 
 .bar{
     display: flex;
     flex-direction: column;
     align-content: space-between;
-   margin-left: 90px;
+   margin-left: 280px;
+   font-family: 'VT323', monospace;
+   
+   
 }
 
 .spaceship1{
@@ -23,11 +26,13 @@
     position: fixed; top:10px; right:0;
 }
 
-#login, #register, #logout{
+#logins, #register, #logout{
     display: flex;
    border: yellow solid 5px;
    color:aliceblue;
    font-size: 20px;
+   background-color: #5B618A;
+   
   
 }
 

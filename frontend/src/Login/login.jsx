@@ -59,8 +59,8 @@ const Login = ()=>{
         <div>
                <Header/>
            </div>
-        <div className="loginpage">
-            <div>
+        <div >
+            <div className="loginpage">
            <div>
            <img src={require('../Pictures/Visuals/login button.png')}alt='login button'/>
            </div>
@@ -70,14 +70,14 @@ const Login = ()=>{
                     <img width='250' height='250' src="https://thumbs.dreamstime.com/b/funny-astronaut-looks-smartphone-sits-moon-space-vector-illustration-prints-design-135260450.jpg" alt="Avatar" class="avatar"/>
                 </div>
                 <div className="flex-container">
-                    <div className="container">
+                    <div className="containerlog">
                         <label for="email"><b>Email</b></label><br/>
                         <input type="text" placeholder="Enter Email" name="email" required onChange={handleChange}/>
                             <br/>
                         <label for="password"><b>Password</b></label><br/> 
                         <input type="password" placeholder="Enter Password" name="password" required onChange={handleChange}/><br/>
                             
-                        <button type="submit"> <img src={require('../Pictures/Visuals/login button.png')}/></button><br/>
+                        <button  className='submitbtn' type="submit"> <img src={require('../Pictures/Visuals/login button.png')}/></button><br/>
                         
                     </div>
 
