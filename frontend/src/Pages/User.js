@@ -33,7 +33,6 @@ const UserPage = (props) =>{
                 <h3>Read all your favorites here: </h3>
                 <h4 className='userfave'>{user.favorites}</h4>
             </div>
-
         </div>
         </>
    
