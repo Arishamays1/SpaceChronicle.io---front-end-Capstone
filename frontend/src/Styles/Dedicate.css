@@ -3,6 +3,18 @@ body{
     color: white
 }
 
-h1, h2{
+h1, h2, .prgh{
     text-align:center
+}
+
+.prgh{
+    font-size:20px;
+    background-color: #51567b;
+    display:flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    
+   
 }
