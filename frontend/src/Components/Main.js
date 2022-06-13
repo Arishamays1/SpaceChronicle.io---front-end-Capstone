@@ -28,9 +28,16 @@ function Main(props){
         };
         getData();
     }, []);
-    
-    const editUser= async(user, id)=>{
 
+    const editUser= async(user, id)=>{
+        await fetch('https://space-io-backend.herokuapp.com/userpage/'+ id,{
+            method:"PUT",
+            headers:{
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(user),
+        })
+       
     }
 
     const discussionData = () =>{
@@ -75,7 +82,7 @@ function Main(props){
                 < Route path ='/spacey' element={< SpaceList space ={space}/>}/>
                 < Route exact path= '/:id' element={< SpacePage space={space} discussion={discussion} createDiscussion={createDiscussion}/>}/>
                 < Route exact path='/login' element={< Login />}/>
-                < Route exact path ='/userpage/:id' element={<UserPage user={user}/>}/>
+                < Route exact path ='/userpage/:id' element={<UserPage user={user} editUser={editUser}/>}/>
                 < Route exact path='/register' element={<Register/>}/>
                 < Route exact path='/success' element={<Success/>}/>
                 < Route path='/dad' element={<Dedicate/>}/>

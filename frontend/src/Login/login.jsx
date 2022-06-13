@@ -67,7 +67,7 @@ const Login = ()=>{
 
             <form onSubmit={handleSubmit}>
                 <div class="imgcontainer">
-                    <img width='250' height='250' src="https://thumbs.dreamstime.com/b/funny-astronaut-looks-smartphone-sits-moon-space-vector-illustration-prints-design-135260450.jpg" alt="Avatar" class="avatar"/>
+                    <img className='loginimg' width='250' height='250' src="https://thumbs.dreamstime.com/b/funny-astronaut-looks-smartphone-sits-moon-space-vector-illustration-prints-design-135260450.jpg" alt="Avatar" class="avatar"/>
                 </div>
                 <div className="flex-container">
                     <div className="containerlog">

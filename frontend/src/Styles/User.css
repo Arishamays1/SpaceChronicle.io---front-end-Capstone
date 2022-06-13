@@ -1,9 +1,11 @@
 .profile{
+    padding-top:30px;
     display:flex;
     flex-direction: column;
     align-items: center;
     font-family: 'VT323', monospace;
-    color:aliceblue
+    color:aliceblue;
+
 }
 .user-title{
     font-size:35px
@@ -16,4 +18,30 @@
     font-size: 30px
 }
 .userfave{
-    text-align:center}
+    text-align:center;
+
+}
+
+.userpic{
+    width:300px;
+    height:300px;
+    box-shadow: 5px 5px 20px 5px #C5EBC3, 5px 5px 20px 5px #C5EBC3;
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+}
+.buttonsub{
+    background-color: #C5EBC3; 
+    font-family: 'VT323', monospace;
+}
+.buttonsub:hover{
+    box-shadow: 5px 5px 20px 5px #C5EBC3, 5px 5px 20px 5px #C5EBC3;
+}
+.inputsub{
+    background-color: #C5EBC3;
+}
+.picform{
+    padding: 15px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}

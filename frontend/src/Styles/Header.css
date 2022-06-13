@@ -11,9 +11,9 @@
 
 .bar{
     display: flex;
-    flex-direction: column;
-    align-content: space-between;
-   margin-left: 280px;
+    flex-direction: row;
+    align-content: space-around;
+   margin-left: 180px;
    font-family: 'VT323', monospace;
    
    
@@ -28,7 +28,8 @@
 
 #logins, #register, #logout{
     display: flex;
-   border: yellow solid 5px;
+   border: #C5EBC3 solid 5px;
+   box-shadow: 2px 5px 10px 2px #C5EBC3, 2px 5px 10px 2px #C5EBC3;
    color:aliceblue;
    font-size: 20px;
    background-color: #5B618A;

@@ -15,7 +15,18 @@ color:aliceblue;
 font-size: 28px
 }
 
+.loginimg{
+    -webkit-animation: mover1 2.6s infinite  alternate;
+    animation: mover1 2.6s infinite  alternate;
+}
+.loginimg:hover{
+    box-shadow: 0 4px 8px 0 #C5EBC3, 0 6px 20px 0 #C5EBC3
+}
+
 .submitbtn{
     background-color: #51567b;
     border:#51567b 0px solid
+}
+.submitbtn:hover{
+     box-shadow: 0 4px 8px 0 #C5EBC3, 0 6px 20px 0 #C5EBC3
 }
