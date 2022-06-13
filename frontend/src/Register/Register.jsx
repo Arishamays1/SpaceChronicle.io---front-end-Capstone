@@ -3,6 +3,8 @@ import {useNavigate} from 'react-router-dom'
 import axios from 'axios'
 import { toast, ToastContainer } from 'react-toastify'
 import Header from '../Components/Header'
+import '../Login/login.css'
+import Footer from '../Components/Footer'
 
 const Register = (props) =>{
     const navigate = useNavigate()
@@ -67,28 +69,31 @@ const Register = (props) =>{
                 
                 </div>
                 <form onSubmit={handleSubmit} autoComplete="off">
-                    <div className="grid-container">
+                    <div className="loginpage">
                         <div className="sign-container">
                             <div className="sign">
-                                <h1>Sign Up</h1>
+                            
+                                <div>
+                                <img src={require('../Pictures/Visuals/sign up.png')}alt='sign up button'/>
+                                </div>
                                 <p>Create an Account!</p>
                             </div>
                             <hr/>
-                            <label for="firstName"><b>First Name</b></label>
+                            <label for="firstName"><b>First Name</b></label> <br/>
                             <input id="signing" type="text" value={newForm.firstName} placeholder="Nasa requires your first name." name="firstName" required onChange={handleChange} />
                             <br/>
-                            <label for ="lastName"><b>Last Name</b></label>
+                            <label for ="lastName"><b>Last Name</b></label><br/>
                             <input id="signing" type="text" value={newForm.lastName} placeholder="Nasa requires your last name." name="lastName" required onChange={handleChange}/>
                             <br/>
-                            <label for ="username"><b>Username</b></label>
+                            <label for ="username"><b>Username</b></label><br/>
                             <input id="signing" type="text" value={newForm.username} placeholder="Nasa requires your username." name="username" required onChange={handleChange}/>
                             <br/>
-                            <label for="email"><b>Email</b></label>
+                            <label for="email"><b>Email</b></label><br/>
                             <input id="signing" type="text" value={newForm.email} placeholder="Nasa requires your Email." name="email" required onChange={handleChange}/>
                             <br/>
-                            <label for ="password"><b>Password</b></label>
-                            <input id="signing" type="password" value={newForm.password} placeholder="Nasa requires your Password." name="password" required onChange={handleChange}/>
-                            <input type="submit" value="Sign Up"/>
+                            <label for ="password"><b>Password</b></label><br/>
+                            <input id="signing" type="password" value={newForm.password} placeholder="Nasa requires your Password." name="password" required onChange={handleChange}/><br/>
+                            <button  className='submitbtn' type="submit"> <img src={require('../Pictures/Visuals/sign up.png')}/></button><br/>
                         
 
                         </div>
@@ -96,6 +101,7 @@ const Register = (props) =>{
                 </form>
                 <ToastContainer/>
             </div>
+           <Footer/> 
         </>
     )
 }

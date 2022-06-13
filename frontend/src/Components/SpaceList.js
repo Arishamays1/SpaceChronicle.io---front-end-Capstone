@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import {Link} from 'react-router-dom'
 import Header from "./Header";
 import '../Styles/List.css'
-
+import Footer from './Footer'
 
 export default function SpaceList() {
 
@@ -46,6 +46,7 @@ export default function SpaceList() {
   <>
   <Header/>
    {loaded()}
+   <Footer/>
   </>):<div className='loadingscreen'>
     <img width='250' height='250' src='https://icon-library.com/images/loading-icon-transparent-background/loading-icon-transparent-background-18.jpg' alt='loading' /> <br/>
   <h1>Loading Top Secret Files...</h1>

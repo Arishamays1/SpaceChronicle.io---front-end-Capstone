@@ -47,12 +47,20 @@ const UserPage = (props) =>{
                 <h3>About Me</h3>
                 <p>{user.bio}</p>
                 <hr/>
+                <form className='picform' onSubmit={handleSubmit} autocomplete="off">
+                        <input className='inputsub' type='text' value={editForm.bio} placeholder='Whats your bio?' name='bio' onChange={handleChange}/><br/>
+                        <input className='buttonsub' type='submit' value='Edit bio'/>
+             </form>
             </div>
             
  
             <div className="favorites">
-                <h3>Read all your favorites here: </h3>
+                <h3>Favorite Astronomy Topics: </h3>
                 <h4 className='userfave'>{user.favorites}</h4>
+                <form className='picform' onSubmit={handleSubmit} autocomplete="off">
+                        <input className='inputsub' type='text' value={editForm.favorites} placeholder='Whats your favorite Nasa related topic??' name='favorites' onChange={handleChange}/><br/>
+                        <input className='buttonsub' type='submit' value='Edit favorites'/>
+             </form>
             </div>
         </div>
         </>

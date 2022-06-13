@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom'
 import { toast, ToastContainer } from 'react-toastify'
 import axios from 'axios'
 import Header from '../Components/Header'
+import Footer from '../Components/Footer'
+
 
 const Login = ()=>{
     const navigate = useNavigate()
@@ -86,6 +88,7 @@ const Login = ()=>{
             <ToastContainer/>
             </div>
         </div>
+        <Footer/>
         </div>
 )
 }

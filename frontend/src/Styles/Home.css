@@ -19,9 +19,7 @@ width:350px;
     box-shadow: 0 4px 8px 0 #C5EBC3, 0 6px 20px 0 #C5EBC3
 }
 
-.triangles{
 
-}
 
 .auth{
     display:flex;
@@ -29,13 +27,12 @@ width:350px;
     
 }
 
-.contents{
+.contents1{
     display:inline-flex;
-    top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+    padding-right:50px;
+    padding-left:50px
 }
+
 @-webkit-keyframes mover {
     0% { transform: translateY(0); }
     100% { transform: translateY(-10px); }
@@ -130,9 +127,3 @@ width:350px;
     100% {transform: rotate(180deg);}
   }
 
-.spacecontent{
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}

@@ -8,6 +8,8 @@
     padding-bottom: 15px;
     align-items:center;
     text-align: center;
+    width:100vw;
+    color:black
     
 }
 
@@ -49,6 +51,8 @@ font-size:25px;
 .spaceexplanation{
 background-color: #51567b;
 border: solid;
+padding-right:50px;
+padding-left:50px
 }
 
 .forms{

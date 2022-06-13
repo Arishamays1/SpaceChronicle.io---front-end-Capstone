@@ -133,6 +133,6 @@ input#img-6:checked ~ .carousel-dots label#img-dot-6 {
 input:checked + .slide-container .nav label { display: block; }
 
 .dad1{
-    width:600px;
-    height:600px
+    width:660px;
+    height:590px
 }

@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 import Header from '../Components/Header'
 import Carousel from '../Components/Carousel'
 import '../Styles/Dedicate.css'
-  
+import Footer from '../Components/Footer'
 const Dedicate= ()=>{
    return(
        <div>
@@ -26,7 +26,7 @@ const Dedicate= ()=>{
             He spearheaded my interest in computer science at the age of 3 and here I am, officially a software engineer, 20 years later.
             So I dedicate my page to you dad. Thank you.
         </p>
-        
+        <Footer/>
         </div>
   )
         

@@ -1,11 +1,14 @@
+import '../Styles/footer.css'
+import { Link } from 'react-router-dom'
 const Footer = () =>{
     return(
         <div>
-            <div className="totoro"> 
-                <img src="https://i.imgur.com/IAWXSei.gif" width="100px" height="100px" alt="totoro walking"/> 
+            <div> 
+            <a href="https://github.com/Arishamays1/SpaceChronicle.io-Capstone" target='_blank'>
+                <img className="oranges" src={require("../Pictures/Visuals/orange planet.png")} width="120px" height="100px" alt="jupiter"/> </a>
             </div>
             <div className="footer">
-                © General Assembly
+                
             </div>   
         </div>
     )
